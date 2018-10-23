@@ -1,0 +1,28 @@
+{
+    "allSkiDays" : [
+        {
+            "resort": "Kirkwood",
+            "date": "2016-12-7",
+            "powder": true,
+            "backbountry": false
+        },
+        {
+            "resort": "Squaw Valley",
+            "date": "2016-12-8",
+            "powder": false,
+            "backbountry": false
+        },
+        {
+            "resort": "Mt Tallac",
+            "date": "2016-12-9",
+            "powder": false,
+            "backbountry": true
+        }
+    ],
+    "goal": 10,
+    "error": [],
+    "resortName": {
+        "fetching": false,
+        "suggestions": ["Squaw Valley", "Snowbird", "Stowe", "Steamboat"]
+    }
+}
