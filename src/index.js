@@ -1,18 +1,26 @@
 import constant from './constants'
-import { skiDay } from './store/reducers'
+import { allSkiDays } from './store/reducers'
 
-const state = null;
+const state = [
+    {
+        "resort": "test",
+        "date": "2017-06-06",
+        "powder": false,
+        "backcountry": true
+    },
+    {
+        "resort": "new test",
+        "date": "2017-06-07",
+        "powder": false,
+        "backcountry": false
+    }
+];
 
 const action = {
-    type: constant.ADD_DAY,
-    payload: {
-        "resort": "test",
-        "date": "2017-06-12",
-        "power": false,
-        "backcountry": true
-    }
+    type: constant.REMOVE_DAY,
+    payload: "2017-06-06"
 }
 
-const nextState = skiDay(state, action);
+const nextState = allSkiDays(state, action);
 
-console.log(`state: ${state}, action: ${JSON.stringify(action)}, new state: ${JSON.stringify(nextState)} `);
+console.log(`state: ${JSON.stringify(state)}, action: ${JSON.stringify(action)}, new state: ${JSON.stringify(nextState)} `);
